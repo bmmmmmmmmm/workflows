@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>124986AC-165A-4FC4-9DE7-55B6760939AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4891590E-AD47-4613-8B4B-6BFD707482C3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4891590E-AD47-4613-8B4B-6BFD707482C3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00195387-C52C-4FAA-A462-2B77B8E781C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5FC98143-B840-4A4A-93D4-8D7A15ED15B6</key>
+		<array/>
+	</dict>
+	<key>createdby</key>
+	<string>koubm &amp; ChatGPT</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>统计字数</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{clipboard}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>5FC98143-B840-4A4A-93D4-8D7A15ED15B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>le</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>统计字数</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>124986AC-165A-4FC4-9DE7-55B6760939AD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>{query}</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>00195387-C52C-4FAA-A462-2B77B8E781C8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run() {
+  var text = "{query}";
+
+  // 统计中文字数
+  let chineseCount = 0;
+  const chinesePattern = /[\u4e00-\u9fa5]/g;
+  const chineseMatches = text.match(chinesePattern);
+  if (chineseMatches) {
+    chineseCount = chineseMatches.length;
+  }
+
+  // 统计英文单词数
+  let englishCount = 0;
+  const englishPattern = /[a-zA-Z]+/g;
+  const englishMatches = text.match(englishPattern);
+  if (englishMatches) {
+    englishCount = englishMatches.length;
+  }
+
+  return chineseCount + englishCount;
+}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4891590E-AD47-4613-8B4B-6BFD707482C3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>00195387-C52C-4FAA-A462-2B77B8E781C8</key>
+		<dict>
+			<key>xpos</key>
+			<real>725</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>124986AC-165A-4FC4-9DE7-55B6760939AD</key>
+		<dict>
+			<key>xpos</key>
+			<real>115</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>4891590E-AD47-4613-8B4B-6BFD707482C3</key>
+		<dict>
+			<key>xpos</key>
+			<real>430</real>
+			<key>ypos</key>
+			<real>245</real>
+		</dict>
+		<key>5FC98143-B840-4A4A-93D4-8D7A15ED15B6</key>
+		<dict>
+			<key>xpos</key>
+			<real>350</real>
+			<key>ypos</key>
+			<real>220</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
