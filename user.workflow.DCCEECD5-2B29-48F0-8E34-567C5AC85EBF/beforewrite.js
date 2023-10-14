@@ -53,7 +53,7 @@ module.exports = function() {
             }));
         })
     } else {
-        public.addRes(result_array, content, `Enter 写入日报 - ${public.currentFile(moment().format("YYYYMMDD"))}`, content);
+        public.addRes(result_array, content, `Enter 写入日报 - ${public.currentFile(moment().format("YYYY-MM-DD"))}`, content);
         console.log(JSON.stringify({
             items: result_array
         }));

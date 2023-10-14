@@ -6,7 +6,7 @@ var moment = require('moment');
 moment.locale('zh-cn');
 
 module.exports = function() {
-    fs.rename(public.currentFile(), public.newFile(moment().format("YYYYMMDD")), (err) => {
+    fs.rename(public.currentFile(), public.newFile(moment().format("YYYY-MM-DD")), (err) => {
         if (err) {
             console.error('');
             return;

@@ -5,7 +5,7 @@ const moment = require('moment');
 moment.locale('zh-cn');
 
 module.exports = function() {
-    fs.readFile(public.currentFile(moment().format("YYYYMMDD")), { flag: 'r+', encoding: 'utf8' }, function (err, data) {
+    fs.readFile(public.currentFile(moment().format("YYYY-MM-DD")), { flag: 'r+', encoding: 'utf8' }, function (err, data) {
         if (err) {
             returnMsg('还没写日报哦');
             return;

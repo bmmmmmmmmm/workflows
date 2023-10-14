@@ -1,14 +1,14 @@
 module.exports = (function(){
     this.basepath = function() {
-        return process.argv.length >= 2 && process.argv[2] != '' ? process.argv[2] : `${process.env.HOME || process.env.USERPROFILE}/AlfredDailyData`;
+        return process.argv.length >= 2 && process.argv[2] != '' ? process.argv[2] : `${process.env.HOME || process.env.USERPROFILE}/Documents/ObsidianVault/DailyData`;
     };
     
     this.currentFile = function(ext) {
-        return `${this.basepath()}/${ext}.txt`;
+        return `${this.basepath()}/${ext}.md`;
     }
 
     this.newFile = function(ext) {
-        return `${this.basepath()}/${ext}.txt`;
+        return `${this.basepath()}/${ext}.md`;
     }
 
     this.addRes = function(result_array, title, subtitle, arg) {
