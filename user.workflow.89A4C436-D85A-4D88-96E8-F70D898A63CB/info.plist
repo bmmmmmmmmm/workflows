@@ -51,7 +51,7 @@
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>计算剪切板中的字符长度</string>
 	<key>objects</key>
