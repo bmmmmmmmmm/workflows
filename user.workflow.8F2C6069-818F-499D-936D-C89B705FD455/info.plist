@@ -46,33 +46,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
+				<key>concurrently</key>
 				<false/>
-				<key>items</key>
-				<string>[{"title":"imock","arg":"modao\/imock","subtitle":"open imock in VS Code"},{"title":"mb-dashboard","arg":"modao\/mb-dashboard","subtitle":"open mb-dashboard in VS Code"},{"title":"mb-brand","arg":"modao\/mb-brand","subtitle":"open mb-brand in VS Code"},{"title":"mb-proto","arg":"modao\/mb-proto","subtitle":"open mb-proto in VS Code"},{"title":"mb-proto2","arg":"modao\/copy\/mb-proto","subtitle":"open mb-proto2 in VS Code"},{"title":"mb-workspace","arg":"modao\/mb-workspace","subtitle":"open mb-workspace in VS Code"},{"title":"mb-flat-json","arg":"modao\/mb-flat-json","subtitle":"open mb-flat-json in VS Code"},{"title":"mb-component","arg":"modao\/mb-component","subtitle":"open mb-component in VS Code"},{"title":"mb-i18n","arg":"modao\/mb-i18n","subtitle":"open mb-i18n in VS Code"},{"title":"test","arg":"pers\/test","subtitle":"open mb-static-resource in VS Code"},{"title":"benming-blog","arg":"pers\/benming_blog","subtitle":"open benming-blog in VS Code"},{"title":"note","arg":"note","subtitle":"open note in VS Code"},{"title":"next","arg":"pers\/nextjsl","subtitle":"open nextjsl in VS Code"}]</string>
-				<key>keyword</key>
-				<string>code</string>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>query="{query}"
+
+code ~/Documents/$query</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string></string>
-				<key>withspace</key>
-				<true/>
+				<key>type</key>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>525AD411-D1CB-4F1D-B907-FBC486358F8C</string>
+			<string>AD4F4296-5335-44C0-900C-A82EF421BAA6</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -108,27 +102,33 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>query="{query}"
-
-code ~/Documents/$query</string>
-				<key>scriptargtype</key>
+				<key>argumenttrimmode</key>
 				<integer>0</integer>
-				<key>scriptfile</key>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<false/>
+				<key>items</key>
+				<string>[{"title":"composition-fe","arg":"zyb\/composition-fe","subtitle":"open composition-fe in VS Code"},{"title":"aiessay-admin-fe","arg":"zyb\/aiessay-admin-fe","subtitle":"open aiessay-admin-fe in VS Code"},{"title":"gsx-college-app-fe","arg":"zyb\/gsx-college-app-fe","subtitle":"open gsx-college-app-fe in VS Code"}]</string>
+				<key>keyword</key>
+				<string>code</string>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
 				<string></string>
-				<key>type</key>
-				<integer>5</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
-			<string>AD4F4296-5335-44C0-900C-A82EF421BAA6</string>
+			<string>525AD411-D1CB-4F1D-B907-FBC486358F8C</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
