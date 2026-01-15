@@ -21,11 +21,11 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>koubm &amp; ChatGPT</string>
+	<string>Bkou &amp; ChatGPT</string>
 	<key>description</key>
 	<string></string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Clear Clipboard Format</string>
 	<key>objects</key>

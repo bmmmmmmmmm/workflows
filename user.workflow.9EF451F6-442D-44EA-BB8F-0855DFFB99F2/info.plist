@@ -138,7 +138,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>LeEnno edit by koubm</string>
+	<string>LeEnno edit by Bkou</string>
 	<key>description</key>
 	<string>Open currently selected Finder (or Path Finder) window in Terminal (or iTerm2) and vice versa</string>
 	<key>disabled</key>
